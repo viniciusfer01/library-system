@@ -7,6 +7,13 @@ module.exports = {
       foto: "https://i.imgur.com/UH3IPXw.jpg",
       autores: ["JK Rowling", "..."],
     },
+    {
+      id: 2,
+      titulo: "Percy Jackson",
+      editora: "IDK",
+      foto: "https://i.imgur.com/UH3IPXw.jpg",
+      autores: ["Rick Riordan", "..."],
+    },
   ],
 
   getAllBooks: function () {

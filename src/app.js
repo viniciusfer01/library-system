@@ -2,6 +2,9 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const books = require("../model/books");
 const app = express();
+const cors = require("cors");
+
+app.use(cors());
 
 app.get("/obras", (req, res) => {
   res.json(JSON.stringify(books.getAllBooks()));
@@ -26,6 +29,6 @@ app.delete("/obras", bodyParser.json(), (req, res) => {
   res.send("book deleted successfully");
 });
 
-app.listen(3000, () => {
-  console.log("Example app listening on port 3000!");
+app.listen(3001, () => {
+  console.log("Example app listening on port 3001!");
 });
